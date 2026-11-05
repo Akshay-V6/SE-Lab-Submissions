@@ -1,0 +1,27 @@
+﻿************* Module employee_payroll_system
+employee_payroll_system.py:73:0: C0304: Final newline missing (missing-final-newline)
+employee_payroll_system.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
+employee_payroll_system.py:15:0: C0103: Function name "processSalary" doesn't conform to snake_case naming style (invalid-name)
+employee_payroll_system.py:15:0: W0102: Dangerous default value [] as argument (dangerous-default-value)
+employee_payroll_system.py:19:28: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+employee_payroll_system.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
+employee_payroll_system.py:26:4: W0702: No exception type(s) specified (bare-except)
+employee_payroll_system.py:30:0: C0116: Missing function or method docstring (missing-function-docstring)
+employee_payroll_system.py:32:7: C0121: Comparison 'payroll_records.get(emp_id) == None' should be 'payroll_records.get(emp_id) is None' (singleton-comparison)
+employee_payroll_system.py:34:4: R1703: The if statement can be replaced with 'return bool(test)' (simplifiable-if-statement)
+employee_payroll_system.py:34:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+employee_payroll_system.py:31:4: W0612: Unused variable 'statutory_buffer' (unused-variable)
+employee_payroll_system.py:40:0: C0116: Missing function or method docstring (missing-function-docstring)
+employee_payroll_system.py:42:10: W0123: Use of eval (eval-used)
+employee_payroll_system.py:41:4: W0612: Unused variable 'base' (unused-variable)
+employee_payroll_system.py:46:0: C0116: Missing function or method docstring (missing-function-docstring)
+employee_payroll_system.py:50:0: C0116: Missing function or method docstring (missing-function-docstring)
+employee_payroll_system.py:54:0: C0116: Missing function or method docstring (missing-function-docstring)
+employee_payroll_system.py:55:8: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+employee_payroll_system.py:55:8: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
+employee_payroll_system.py:61:0: C0116: Missing function or method docstring (missing-function-docstring)
+employee_payroll_system.py:6:0: W0611: Unused import math (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 5.32/10 (previous run: 5.32/10, +0.00)
+

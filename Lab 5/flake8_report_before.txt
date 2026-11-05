@@ -1,0 +1,7 @@
+﻿employee_payroll_system.py:6:1: F401 'math' imported but unused
+employee_payroll_system.py:19:80: E501 line too long (84 > 79 characters)
+employee_payroll_system.py:26:5: E722 do not use bare 'except'
+employee_payroll_system.py:31:5: F841 local variable 'statutory_buffer' is assigned to but never used
+employee_payroll_system.py:32:36: E711 comparison to None should be 'if cond is None:'
+employee_payroll_system.py:41:5: F841 local variable 'base' is assigned to but never used
+employee_payroll_system.py:73:7: W292 no newline at end of file
