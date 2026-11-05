@@ -1,28 +1,27 @@
 @startuml
 left to right direction
-actor Customer
-actor "Payment Gateway" as Gateway
-actor Barista
-actor "Store Admin" as Admin
-rectangle "Coffee Ordering System" {
-  usecase "UC-01 Select Coffee Type" as UC01
-  usecase "UC-02 Select Drink Size" as UC02
-  usecase "UC-03 Customize Drink" as UC03
-  usecase "UC-04 Review Order" as UC04
-  usecase "UC-05 Place and Pay for Order" as UC05
-  usecase "UC-06 Receive Preparation Order" as UC06
-  usecase "UC-07 Maintain Menu" as UC07
-  usecase "UC-08 Calculate Total" as UC08
-  usecase "UC-09 Process Payment" as UC09
+actor "Database Administrator" as DBA
+actor "Backend Lead" as Lead
+actor "Slow-query log source" as Logs
+rectangle "Query Performance Profiler" {
+ usecase "Ingest slow-query logs" as Ingest
+ usecase "Parse SQL execution plans" as Parse
+ usecase "Detect missing-index candidates" as Detect
+ usecase "Rank candidates by impact" as Rank
+ usecase "Review and record recommendation" as Review
+ usecase "Generate weekly optimization digest" as Digest
+ usecase "Export recommendation details" as Export
+ Ingest ..> Parse : <<include>>
+ Detect ..> Rank : <<include>>
+ Digest ..> Rank : <<include>>
+ Export ..> Review : <<extend>>
 }
-Customer -- UC01
-Customer -- UC02
-Customer -- UC03
-Customer -- UC04
-Customer -- UC05
-Gateway -- UC09
-Barista -- UC06
-Admin -- UC07
-UC05 ..> UC08 : <<include>>
-UC05 ..> UC09 : <<include>>
+DBA -- Ingest
+DBA -- Detect
+DBA -- Review
+DBA -- Rank
+Lead -- Review
+Lead -- Digest
+Lead -- Export
+Logs -- Ingest
 @enduml

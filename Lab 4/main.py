@@ -1,41 +1,39 @@
+"""Launch the Space Invaders game."""
+
 import pygame
 from game.game_engine import GameEngine
 
-# Initialize pygame/Start application
-pygame.init()
-
-# Screen dimensions
 WIDTH, HEIGHT = 600, 700
-SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Space Invaders - Pygame Version")
-
-# Colors
+FPS = 60
 BLACK = (0, 0, 0)
 
-# Clock
-clock = pygame.time.Clock()
-FPS = 60
-
-# Game loop
-engine = GameEngine(WIDTH, HEIGHT)
 
 def main():
+    """Initialize Pygame and run until the player exits."""
+    pygame.init()
+    try:
+        pygame.mixer.init()
+    except pygame.error:
+        # Gameplay remains available on machines without an audio device.
+        pass
+
+    screen = pygame.display.set_mode((WIDTH, HEIGHT))
+    pygame.display.set_caption("Space Invaders")
+    clock = pygame.time.Clock()
+    engine = GameEngine(WIDTH, HEIGHT)
+
     running = True
     while running:
-        SCREEN.fill(BLACK)
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-            engine.handle_event(event)
-
+            running = engine.handle_event(event) and running
         engine.handle_input()
         engine.update()
-        engine.render(SCREEN)
-
+        engine.render(screen)
         pygame.display.flip()
         clock.tick(FPS)
 
     pygame.quit()
+
 
 if __name__ == "__main__":
     main()

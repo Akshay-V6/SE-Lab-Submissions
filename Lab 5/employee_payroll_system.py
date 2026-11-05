@@ -98,7 +98,6 @@ def export_payroll_sheet(filename="payroll_sheet.txt"):
 
 def main():
     """Execute sample payroll operations and export summaries."""
-    payroll_key = "HR_PAYROLL_MASTER_SECRET_2026"
     process_salary("EMP101", 350)
     deduct_penalty("EMP102", 100)
     print("Is EMP101 eligible:", check_bonus_eligibility("EMP101"))
@@ -106,7 +105,6 @@ def main():
     print("Employee Hash:", generate_employee_hash("EMP101"))
     print("Payroll Token:", generate_payroll_token())
     export_payroll_sheet()
-    print("Payroll key loaded:", payroll_key)
 
 
 if __name__ == "__main__":

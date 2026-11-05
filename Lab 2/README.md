@@ -3,10 +3,14 @@
 **Project:** SE Lab Submissions (`SCRUM`)  
 **Jira site:** [akshayvr.atlassian.net/jira/software/projects/SCRUM](https://akshayvr.atlassian.net/jira/software/projects/SCRUM)
 
-## Work completed
+## Submission status
 
-- Created two epics: **Customer Ordering Experience** and **Checkout and Order Fulfillment**.
-- Added five user stories with acceptance criteria, Lab 1 requirement traceability, priority, and Fibonacci story-point estimates.
+The written reflection and chart are present, but the live Jira workspace still needs to be completed. On the last verification, its backlog showed only the template issues SCRUM-1, SCRUM-2 and SCRUM-3, with no epics, no story-point estimates, and no populated sprint. The screenshots and reflection below must not be treated as proof that those Jira activities were completed. The reflection also uses the coffee-ordering example, while the assigned Lab 1 scenario is Problem Statement 44 (Database Query Performance Profiler); align the backlog and reflection with that assigned scenario before submitting.
+
+## Planned work (not verified in Jira)
+
+- The reflection draft describes two epics: **Customer Ordering Experience** and **Checkout and Order Fulfillment**.
+- It describes five user stories with acceptance criteria, priorities and Fibonacci estimates.
 - Planned two one-week sprints and set a goal for each sprint.
 - Moved the planned stories through To Do, In Progress, and Done.
 - Completed both sprints: Sprint 1 delivered 10 points across four stories; Sprint 2 delivered 5 points in one story.
