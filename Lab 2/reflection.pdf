@@ -1,0 +1,116 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3623 >>
+stream
+BT /F1 19 Tf 0.07 0.21 0.35 rg 50 746 Td (Lab 2: Jira Scrum Planning and Sprint Management) Tj ET
+BT /F1 10 Tf 0.34 0.40 0.47 rg 50 724 Td (Software Engineering Lab | Jira project: SE Lab Submissions \(SCRUM\)) Tj ET
+BT /F1 9 Tf 0.08 0.34 0.55 rg 50 707 Td (Project: https://akshayvr.atlassian.net/jira/software/projects/SCRUM) Tj ET
+BT /F1 14 Tf 0.07 0.21 0.35 rg 50 674 Td (Work completed) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 654 Td (Created two epics and five user stories based on the Lab 1 coffee ordering system.) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 639 Td (Stories include acceptance criteria, requirement traceability, priority, and Fibonacci estimates.) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 624 Td (Planned two one-week sprints and moved all five planned stories through Done.) Tj ET
+0.92 0.95 0.97 rg 50 570 512 24 re f
+BT /F1 9 Tf 0.07 0.21 0.35 rg 57 578 Td (Sprint) Tj ET
+BT /F1 9 Tf 0.07 0.21 0.35 rg 118 578 Td (Goal) Tj ET
+BT /F1 9 Tf 0.07 0.21 0.35 rg 382 578 Td (Stories) Tj ET
+BT /F1 9 Tf 0.07 0.21 0.35 rg 452 578 Td (Planned) Tj ET
+BT /F1 9 Tf 0.07 0.21 0.35 rg 516 578 Td (Done) Tj ET
+0.82 0.86 0.90 RG 1 w 50 570 m 562 570 l S
+BT /F1 9 Tf 0.10 0.16 0.23 rg 57 550 Td (Sprint 1) Tj ET
+BT /F1 9 Tf 0.10 0.16 0.23 rg 118 550 Td (Selection, customization, order review) Tj ET
+BT /F1 9 Tf 0.10 0.16 0.23 rg 382 550 Td (SCRUM-7 to 10) Tj ET
+BT /F1 9 Tf 0.10 0.16 0.23 rg 458 550 Td (10 pts) Tj ET
+BT /F1 9 Tf 0.10 0.16 0.23 rg 520 550 Td (10 pts) Tj ET
+0.82 0.86 0.90 RG 1 w 50 538 m 562 538 l S
+BT /F1 9 Tf 0.10 0.16 0.23 rg 57 518 Td (Sprint 2) Tj ET
+BT /F1 9 Tf 0.10 0.16 0.23 rg 118 518 Td (Payment and order confirmation) Tj ET
+BT /F1 9 Tf 0.10 0.16 0.23 rg 382 518 Td (SCRUM-11) Tj ET
+BT /F1 9 Tf 0.10 0.16 0.23 rg 458 518 Td (5 pts) Tj ET
+BT /F1 9 Tf 0.10 0.16 0.23 rg 520 518 Td (5 pts) Tj ET
+0.82 0.86 0.90 RG 1 w 50 506 m 562 506 l S
+BT /F1 14 Tf 0.07 0.21 0.35 rg 50 474 Td (Burndown summary) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 454 Td (Planned story points remaining) Tj ET
+0.87 0.90 0.93 RG 0.7 w 91 430 m 548 430 l S
+BT /F1 8 Tf 0.36 0.42 0.49 rg 60 427 Td (10) Tj ET
+0.87 0.90 0.93 RG 0.7 w 91 390 m 548 390 l S
+BT /F1 8 Tf 0.36 0.42 0.49 rg 60 387 Td (7.5) Tj ET
+0.87 0.90 0.93 RG 0.7 w 91 350 m 548 350 l S
+BT /F1 8 Tf 0.36 0.42 0.49 rg 60 347 Td (5) Tj ET
+0.87 0.90 0.93 RG 0.7 w 91 310 m 548 310 l S
+BT /F1 8 Tf 0.36 0.42 0.49 rg 60 307 Td (2.5) Tj ET
+0.87 0.90 0.93 RG 0.7 w 91 270 m 548 270 l S
+BT /F1 8 Tf 0.36 0.42 0.49 rg 60 267 Td (0) Tj ET
+0.35 0.42 0.49 RG 0.8 w 91 430 m 91 270 l S
+BT /F1 8 Tf 0.36 0.42 0.49 rg 92 250 Td (Sprint start) Tj ET
+BT /F1 8 Tf 0.36 0.42 0.49 rg 498 250 Td (Sprint end) Tj ET
+0.16 0.42 0.65 RG 3 w 112 430 m 520 270 l S
+0.12 0.62 0.48 RG 3 w 112 350 m 520 270 l S
+0.16 0.42 0.65 rg 108 426 8 8 re f 0.16 0.42 0.65 rg 516 266 8 8 re f 0.12 0.62 0.48 rg 108 346 8 8 re f 0.12 0.62 0.48 rg 516 266 8 8 re f
+BT /F1 9 Tf 0.16 0.42 0.65 rg 130 226 Td (Sprint 1: 10 to 0 points) Tj ET
+BT /F1 9 Tf 0.12 0.62 0.48 rg 310 226 Td (Sprint 2: 5 to 0 points) Tj ET
+0.94 0.96 0.98 rg 50 135 512 64 re f
+0.18 0.43 0.62 rg 50 135 4 64 re f
+BT /F1 9 Tf 0.10 0.16 0.23 rg 64 181 Td (Report note: Jira exposed a Sprint burndown chart option, but selecting it routed to a) Tj ET
+BT /F1 9 Tf 0.10 0.16 0.23 rg 64 166 Td (not-found page. This chart summarizes recorded sprint start/end totals; it is not an) Tj ET
+BT /F1 9 Tf 0.20 0.27 0.34 rg 64 151 Td (exported Jira report. Work was completed in one lab session, not day by day.) Tj ET
+BT /F1 8 Tf 0.40 0.46 0.52 rg 50 104 Td (Evidence: Lab 2/evidence/jira-summary.jpg | Reflection answers on page 2) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 2736 >>
+stream
+BT /F1 19 Tf 0.07 0.21 0.35 rg 50 746 Td (Lab 2 Reflection) Tj ET
+BT /F1 10 Tf 0.34 0.40 0.47 rg 50 724 Td (Jira Scrum planning and sprint management | SE Lab Submissions) Tj ET
+BT /F1 12 Tf 0.07 0.21 0.35 rg 50 680 Td (1. How did planning help organize the work?) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 661 Td (The backlog connected each customer-facing story to an epic and to the Lab 1) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 646 Td (requirement it implements. Acceptance criteria made the expected behavior reviewable) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 631 Td (before work began. Sprint 1 grouped selection and order review; Sprint 2 held payment) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 616 Td (and confirmation. This made the planned scope and the remaining dependency visible.) Tj ET
+BT /F1 12 Tf 0.07 0.21 0.35 rg 50 587 Td (2. What did story-point estimation add?) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 568 Td (Fibonacci estimates gave the team relative sizes without pretending to know exact hours.) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 553 Td (The five stories were estimated at 3, 2, 3, 2, and 5 points. Payment received the) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 538 Td (largest estimate because of uncertainty around approval, decline, retry, and order) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 523 Td (creation. The two sprint loads were easy to compare: 10 points and 5 points.) Tj ET
+BT /F1 12 Tf 0.07 0.21 0.35 rg 50 494 Td (3. How did the board workflow help?) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 475 Td (The To Do, In Progress, and Done columns showed each story state and made completion) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 460 Td (visible. Moving stories across the board showed progress and made open work apparent) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 445 Td (when a sprint closed. All five planned stories reached Done; starter template issues) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 430 Td (were left out of the lab sprints.) Tj ET
+BT /F1 12 Tf 0.07 0.21 0.35 rg 50 401 Td (4. What does the burndown show, and what are its limits?) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 382 Td (The summary shows Sprint 1 going from 10 to 0 points and Sprint 2 from 5 to 0. Jira's) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 367 Td (report option routed to a not-found page, so the chart summarizes captured sprint totals) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 352 Td (instead of claiming to be an exported Jira report. All status transitions were done) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 337 Td (in one lab session, so the drop is concentrated at the start of each one-week window;) Tj ET
+BT /F1 10 Tf 0.10 0.16 0.23 rg 50 322 Td (it does not represent a realistic day-by-day work pace.) Tj ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000003922 00000 n 
+0000004019 00000 n 
+0000004145 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+6933
+%%EOF
