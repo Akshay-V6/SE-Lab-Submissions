@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820"><rect width="100%" height="100%" fill="white"/>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8z" fill="#294d72"/></marker></defs>
+<style>text{font-family:Arial,sans-serif;fill:#17243a}.title{font-size:29px;font-weight:bold}.sub{font-size:15px;fill:#4b5c72}.layer{font-size:17px;font-weight:bold;letter-spacing:1px;fill:#26415f}.name{font-size:19px;font-weight:bold}.kind{font-size:14px;fill:#49627d}.detail{font-size:14px;fill:#26364a}.wire{font-size:13px;font-weight:bold;fill:#243750}</style>
+<text x="35" y="45" class="title">Self-Service Coffee Kiosk · Component Architecture</text>
+<text x="35" y="75" class="sub">Layered design · solid connectors show data flow · ball = provided interface · socket = required interface</text>
+<rect x="25" y="105" width="245" height="680" rx="16" fill="#f3f7fb" stroke="#d5dfeb" stroke-width="2"/>
+<text x="41" y="137" class="layer">PRESENTATION</text>
+<rect x="285" y="105" width="385" height="680" rx="16" fill="#f3f7fb" stroke="#d5dfeb" stroke-width="2"/>
+<text x="301" y="137" class="layer">APPLICATION</text>
+<rect x="685" y="105" width="385" height="680" rx="16" fill="#f3f7fb" stroke="#d5dfeb" stroke-width="2"/>
+<text x="701" y="137" class="layer">DATA & DEVICE ADAPTERS</text>
+<rect x="1085" y="105" width="330" height="680" rx="16" fill="#f3f7fb" stroke="#d5dfeb" stroke-width="2"/>
+<text x="1101" y="137" class="layer">EXTERNAL SYSTEMS</text>
+<rect x="55" y="300" width="185" height="135" rx="12" fill="#eaf2ff" stroke="#4a6b91" stroke-width="2"/>
+<text x="69" y="334" class="name">Touchscreen UI</text>
+<text x="69" y="365" class="kind">Presentation layer</text>
+<text x="69" y="399" class="detail">Order entry, size, review</text>
+<rect x="335" y="300" width="285" height="135" rx="12" fill="#eaf2ff" stroke="#4a6b91" stroke-width="2"/>
+<text x="349" y="334" class="name">Order Manager</text>
+<text x="349" y="365" class="kind">Application layer</text>
+<text x="349" y="399" class="detail">Validates order and coordinates</text>
+<rect x="335" y="535" width="285" height="135" rx="12" fill="#eaf2ff" stroke="#4a6b91" stroke-width="2"/>
+<text x="349" y="569" class="name">Payment Service</text>
+<text x="349" y="600" class="kind">Application layer</text>
+<text x="349" y="634" class="detail">Tokenized card authorization</text>
+<rect x="735" y="180" width="285" height="135" rx="12" fill="#eaf2ff" stroke="#4a6b91" stroke-width="2"/>
+<text x="749" y="214" class="name">Menu & Pricing</text>
+<text x="749" y="237" class="name">Repository</text>
+<text x="749" y="268" class="kind">Data layer</text>
+<text x="749" y="302" class="detail">Coffee, sizes, current prices</text>
+<rect x="735" y="535" width="285" height="135" rx="12" fill="#eaf2ff" stroke="#4a6b91" stroke-width="2"/>
+<text x="749" y="569" class="name">Receipt Printer</text>
+<text x="749" y="592" class="name">Adapter</text>
+<text x="749" y="623" class="kind">Device adapter</text>
+<text x="749" y="657" class="detail">Formats receipt print jobs</text>
+<rect x="1130" y="180" width="245" height="135" rx="12" fill="#fff4e5" stroke="#4a6b91" stroke-width="2"/>
+<text x="1144" y="214" class="name">Card Gateway</text>
+<text x="1144" y="245" class="kind">External payment</text>
+<text x="1144" y="279" class="detail">HTTPS / TLS authorization</text>
+<rect x="1130" y="535" width="245" height="135" rx="12" fill="#fff4e5" stroke="#4a6b91" stroke-width="2"/>
+<text x="1144" y="569" class="name">Thermal Receipt</text>
+<text x="1144" y="592" class="name">Printer</text>
+<text x="1144" y="623" class="kind">External device</text>
+<text x="1144" y="657" class="detail">ESC/POS over USB</text>
+<polyline points="240,366 335,366" fill="none" stroke="#294d72" stroke-width="3" marker-end="url(#a)"/>
+<circle cx="240" cy="366" r="9" fill="white" stroke="#294d72" stroke-width="3"/>
+<circle cx="335" cy="366" r="8" fill="#294d72"/>
+<rect x="196" y="329" width="182" height="20" rx="4" fill="white" opacity=".96"/>
+<text x="287" y="344" text-anchor="middle" class="wire">Order API · local</text>
+<polyline points="610,330 735,250" fill="none" stroke="#294d72" stroke-width="3" marker-end="url(#a)"/>
+<circle cx="610" cy="330" r="9" fill="white" stroke="#294d72" stroke-width="3"/>
+<circle cx="735" cy="250" r="8" fill="#294d72"/>
+<rect x="587" y="287" width="182" height="20" rx="4" fill="white" opacity=".96"/>
+<text x="678" y="302" text-anchor="middle" class="wire">Catalog / price query</text>
+<polyline points="480,435 480,535" fill="none" stroke="#294d72" stroke-width="3" marker-end="url(#a)"/>
+<circle cx="480" cy="435" r="9" fill="white" stroke="#294d72" stroke-width="3"/>
+<circle cx="480" cy="535" r="8" fill="#294d72"/>
+<rect x="464" y="473" width="182" height="20" rx="4" fill="white" opacity=".96"/>
+<text x="555" y="488" text-anchor="middle" class="wire">Payment request · token</text>
+<polyline points="610,405 735,575" fill="none" stroke="#294d72" stroke-width="3" marker-end="url(#a)"/>
+<circle cx="610" cy="405" r="9" fill="white" stroke="#294d72" stroke-width="3"/>
+<circle cx="735" cy="575" r="8" fill="#294d72"/>
+<rect x="589" y="487" width="182" height="20" rx="4" fill="white" opacity=".96"/>
+<text x="680" y="502" text-anchor="middle" class="wire">Receipt job</text>
+<polyline points="620,575 650,575 650,740 1400,740 1400,250 1375,250" fill="none" stroke="#294d72" stroke-width="3" marker-end="url(#a)"/>
+<circle cx="620" cy="575" r="9" fill="white" stroke="#294d72" stroke-width="3"/>
+<circle cx="1375" cy="250" r="8" fill="#294d72"/>
+<rect x="809" y="727" width="182" height="20" rx="4" fill="white" opacity=".96"/>
+<text x="900" y="742" text-anchor="middle" class="wire">Card authorization · TLS</text>
+<polyline points="1020,600 1130,600" fill="none" stroke="#294d72" stroke-width="3" marker-end="url(#a)"/>
+<circle cx="1020" cy="600" r="9" fill="white" stroke="#294d72" stroke-width="3"/>
+<circle cx="1130" cy="600" r="8" fill="#294d72"/>
+<rect x="984" y="562" width="182" height="20" rx="4" fill="white" opacity=".96"/>
+<text x="1075" y="577" text-anchor="middle" class="wire">ESC/POS · USB</text>
+<text x="35" y="810" class="sub">Order Manager and Payment Service are specified components; the remaining components support kiosk flow and integrations.</text></svg>
