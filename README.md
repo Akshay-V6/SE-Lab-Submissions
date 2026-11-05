@@ -4,7 +4,7 @@ Combined Software Engineering lab submissions. Each lab is kept in its own folde
 
 ## Labs
 
-- [Lab 1](Lab%201/README.md) — pending
+- [Lab 1](Lab%201/README.md) — Requirements Engineering (coffee ordering system)
 - [Lab 2](Lab%202/README.md) — pending
 - [Lab 3](Lab%203/README.md) — pending
 - [Lab 4](Lab%204/README.md) — Space Invaders
