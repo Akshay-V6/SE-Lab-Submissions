@@ -1,0 +1,295 @@
+.F.F.FFFFFFFFFF                                                          [100%]
+================================== FAILURES ===================================
+__________________ test_award_amount_rejects_marks_above_100 __________________
+
+    @given(marks=st.integers(min_value=101, max_value=10_000))
+>   def test_award_amount_rejects_marks_above_100(marks):
+                   ^^^
+
+test_processor.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+marks = 101
+
+    @given(marks=st.integers(min_value=101, max_value=10_000))
+    def test_award_amount_rejects_marks_above_100(marks):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+E       Failing test case: test_award_amount_rejects_marks_above_100(
+E           marks=101,
+E       )
+
+test_processor.py:41: Failed
+________________ test_eligibility_rejects_attendance_above_100 ________________
+
+    @given(attendance=st.integers(min_value=101, max_value=10_000))
+>   def test_eligibility_rejects_attendance_above_100(attendance):
+                   ^^^
+
+test_processor.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+attendance = 101
+
+    @given(attendance=st.integers(min_value=101, max_value=10_000))
+    def test_eligibility_rejects_attendance_above_100(attendance):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+E       Failing test case: test_eligibility_rejects_attendance_above_100(
+E           attendance=101,
+E       )
+
+test_processor.py:61: Failed
+_____________ test_application_status_rejects_negative_days_left ______________
+
+    @given(days_left=st.integers(max_value=-1))
+>   def test_application_status_rejects_negative_days_left(days_left):
+                   ^^^
+
+test_processor.py:83: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+days_left = -1
+
+    @given(days_left=st.integers(max_value=-1))
+    def test_application_status_rejects_negative_days_left(days_left):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+E       Failing test case: test_application_status_rejects_negative_days_left(
+E           days_left=-1,
+E       )
+
+test_processor.py:84: Failed
+_________________ test_award_amount_rejects_non_integer_marks _________________
+  + Exception Group Traceback (most recent call last):
+  |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 96, in test_award_amount_rejects_non_integer_marks
+  |     def test_award_amount_rejects_non_integer_marks(marks):
+  |                    ^^^
+  | BaseExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 97, in test_award_amount_rejects_non_integer_marks
+    |     with pytest.raises(ValueError):
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^
+    | Failed: DID NOT RAISE ValueError
+    | Failing test case: test_award_amount_rejects_non_integer_marks(
+    |     marks=0.0,
+    | )
+    | Explanation:
+    |     These lines were always and only run by failing test cases:
+    |         SE-Lab-Submissions\Lab 7\processor.py:16
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 98, in test_award_amount_rejects_non_integer_marks
+    |     award_amount("merit", marks, "low", False)
+    |   File "SE-Lab-Submissions\Lab 7\processor.py", line 14, in award_amount
+    |     if marks < 0:
+    |        ^^^^^^^^^
+    | TypeError: '<' not supported between instances of 'NoneType' and 'int'
+    | Failing test case: test_award_amount_rejects_non_integer_marks(
+    |     marks=None,
+    | )
+    +------------------------------------
+_______________ test_award_amount_rejects_unknown_income_level ________________
+
+    @given(income_level=st.text().filter(lambda value: value not in INCOME_LEVELS))
+>   def test_award_amount_rejects_unknown_income_level(income_level):
+                   ^^^
+
+test_processor.py:102: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+income_level = ''
+
+    @given(income_level=st.text().filter(lambda value: value not in INCOME_LEVELS))
+    def test_award_amount_rejects_unknown_income_level(income_level):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+E       Failing test case: test_award_amount_rejects_unknown_income_level(
+E           income_level='',  # or any other generated value
+E       )
+
+test_processor.py:103: Failed
+________________ test_award_amount_rejects_non_boolean_renewal ________________
+
+    @given(is_renewal=st.one_of(st.integers(), st.text(), st.none()))
+>   def test_award_amount_rejects_non_boolean_renewal(is_renewal):
+                   ^^^
+
+test_processor.py:108: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+is_renewal = None
+
+    @given(is_renewal=st.one_of(st.integers(), st.text(), st.none()))
+    def test_award_amount_rejects_non_boolean_renewal(is_renewal):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+E       Failing test case: test_award_amount_rejects_non_boolean_renewal(
+E           is_renewal=None,  # or any other generated value
+E       )
+
+test_processor.py:109: Failed
+_______________ test_eligibility_rejects_non_integer_attendance _______________
+  + Exception Group Traceback (most recent call last):
+  |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 114, in test_eligibility_rejects_non_integer_attendance
+  |     def test_eligibility_rejects_non_integer_attendance(attendance):
+  |                    ^^^
+  | BaseExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 115, in test_eligibility_rejects_non_integer_attendance
+    |     with pytest.raises(ValueError):
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^
+    | Failed: DID NOT RAISE ValueError
+    | Failing test case: test_eligibility_rejects_non_integer_attendance(
+    |     attendance=0.0,  # or any other generated value
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 116, in test_eligibility_rejects_non_integer_attendance
+    |     is_eligible(attendance, 0, False)
+    |   File "SE-Lab-Submissions\Lab 7\processor.py", line 34, in is_eligible
+    |     if attendance < 75:
+    |        ^^^^^^^^^^^^^^^
+    | TypeError: '<' not supported between instances of 'NoneType' and 'int'
+    | Failing test case: test_eligibility_rejects_non_integer_attendance(
+    |     attendance=None,  # or any other generated value
+    | )
+    +------------------------------------
+_______________ test_eligibility_rejects_invalid_backlog_counts _______________
+  + Exception Group Traceback (most recent call last):
+  |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 120, in test_eligibility_rejects_invalid_backlog_counts
+  |     def test_eligibility_rejects_invalid_backlog_counts(backlogs):
+  |                    ^^^
+  | BaseExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 121, in test_eligibility_rejects_invalid_backlog_counts
+    |     with pytest.raises(ValueError):
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^
+    | Failed: DID NOT RAISE ValueError
+    | Failing test case: test_eligibility_rejects_invalid_backlog_counts(
+    |     backlogs=-1,  # or any other generated value
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 122, in test_eligibility_rejects_invalid_backlog_counts
+    |     is_eligible(90, backlogs, False)
+    |   File "SE-Lab-Submissions\Lab 7\processor.py", line 36, in is_eligible
+    |     return backlogs <= 1
+    |            ^^^^^^^^^^^^^
+    | TypeError: '<=' not supported between instances of 'NoneType' and 'int'
+    | Failing test case: test_eligibility_rejects_invalid_backlog_counts(
+    |     backlogs=None,  # or any other generated value
+    | )
+    +------------------------------------
+_________________ test_eligibility_rejects_non_boolean_quota __________________
+
+    @given(is_special_quota=st.one_of(st.integers(), st.text(), st.none()))
+>   def test_eligibility_rejects_non_boolean_quota(is_special_quota):
+                   ^^^
+
+test_processor.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+is_special_quota = None
+
+    @given(is_special_quota=st.one_of(st.integers(), st.text(), st.none()))
+    def test_eligibility_rejects_non_boolean_quota(is_special_quota):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+E       Failing test case: test_eligibility_rejects_non_boolean_quota(
+E           is_special_quota=None,  # or any other generated value
+E       )
+
+test_processor.py:127: Failed
+______________ test_application_status_rejects_non_integer_days _______________
+  + Exception Group Traceback (most recent call last):
+  |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 132, in test_application_status_rejects_non_integer_days
+  |     def test_application_status_rejects_non_integer_days(days_left):
+  |                    ^^^
+  | BaseExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 133, in test_application_status_rejects_non_integer_days
+    |     with pytest.raises(ValueError):
+    |          ^^^^^^^^^^^^^^^^^^^^^^^^^
+    | Failed: DID NOT RAISE ValueError
+    | Failing test case: test_application_status_rejects_non_integer_days(
+    |     days_left=0.0,  # or any other generated value
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "SE-Lab-Submissions\Lab 7\test_processor.py", line 134, in test_application_status_rejects_non_integer_days
+    |     application_status(days_left, False, False)
+    |   File "SE-Lab-Submissions\Lab 7\processor.py", line 44, in application_status
+    |     if days_left >= cutoff:
+    |        ^^^^^^^^^^^^^^^^^^^
+    | TypeError: '>=' not supported between instances of 'NoneType' and 'int'
+    | Failing test case: test_application_status_rejects_non_integer_days(
+    |     days_left=None,  # or any other generated value
+    | )
+    +------------------------------------
+_____________ test_application_status_rejects_non_boolean_renewal _____________
+
+    @given(is_renewal=st.one_of(st.integers(), st.text(), st.none()))
+>   def test_application_status_rejects_non_boolean_renewal(is_renewal):
+                   ^^^
+
+test_processor.py:138: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+is_renewal = None
+
+    @given(is_renewal=st.one_of(st.integers(), st.text(), st.none()))
+    def test_application_status_rejects_non_boolean_renewal(is_renewal):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+E       Failing test case: test_application_status_rejects_non_boolean_renewal(
+E           is_renewal=None,  # or any other generated value
+E       )
+
+test_processor.py:139: Failed
+___________ test_application_status_rejects_non_boolean_paper_flag ____________
+
+    @given(is_paper=st.one_of(st.integers(), st.text(), st.none()))
+>   def test_application_status_rejects_non_boolean_paper_flag(is_paper):
+                   ^^^
+
+test_processor.py:144: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+is_paper = None
+
+    @given(is_paper=st.one_of(st.integers(), st.text(), st.none()))
+    def test_application_status_rejects_non_boolean_paper_flag(is_paper):
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+E       Failing test case: test_application_status_rejects_non_boolean_paper_flag(
+E           is_paper=None,  # or any other generated value
+E       )
+
+test_processor.py:145: Failed
+=========================== short test summary info ===========================
+FAILED test_processor.py::test_award_amount_rejects_marks_above_100 - Failed:...
+FAILED test_processor.py::test_eligibility_rejects_attendance_above_100 - Fai...
+FAILED test_processor.py::test_application_status_rejects_negative_days_left
+FAILED test_processor.py::test_award_amount_rejects_non_integer_marks - BaseE...
+FAILED test_processor.py::test_award_amount_rejects_unknown_income_level - Fa...
+FAILED test_processor.py::test_award_amount_rejects_non_boolean_renewal - Fai...
+FAILED test_processor.py::test_eligibility_rejects_non_integer_attendance - B...
+FAILED test_processor.py::test_eligibility_rejects_invalid_backlog_counts - B...
+FAILED test_processor.py::test_eligibility_rejects_non_boolean_quota - Failed...
+FAILED test_processor.py::test_application_status_rejects_non_integer_days - ...
+FAILED test_processor.py::test_application_status_rejects_non_boolean_renewal
+FAILED test_processor.py::test_application_status_rejects_non_boolean_paper_flag
+12 failed, 3 passed in 3.00s

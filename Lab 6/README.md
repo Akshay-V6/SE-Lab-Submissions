@@ -13,6 +13,7 @@ A small Python module that works out scholarship award amounts by category, mark
 | `scholarship_awards.py` | The module under test |
 | `test_scholarship_awards.py` | Starter test file |
 
-Keep all your Lab 6 work in this `LAB6` folder. Lab 7 will be added to this repo later.
+Keep Lab 6 coverage work in this folder. Lab 7 fuzz testing is documented in the separate [Lab 7 folder](../Lab%207/README.md).
 
 Refer to the lab handout for instructions.
+

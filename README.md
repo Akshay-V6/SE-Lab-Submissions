@@ -10,6 +10,7 @@ Combined Software Engineering lab submissions. Each lab is kept in its own folde
 - [Lab 4](Lab%204/README.md) — Space Invaders
 - [Lab 5](Lab%205/README.md) — Employee Payroll System
 - [Lab 6](Lab%206/README.md) — Scholarship Awards
+- [Lab 7](Lab%207/README.md) — Hypothesis fuzz testing
 
 ## Original repositories
 
@@ -18,4 +19,5 @@ Combined Software Engineering lab submissions. Each lab is kept in its own folde
 - Lab 6: https://github.com/Akshay-V6/L6_L7_44_scholarship_awards
 
 Source project files are grouped here for a single submission repository. Original repository histories are not included.
+
 

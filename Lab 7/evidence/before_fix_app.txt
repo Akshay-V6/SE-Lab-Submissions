@@ -1,0 +1,4 @@
+Scholarship application processor
+Marks 120 award: 7200
+Attendance 150 eligible: True
+Negative days-left status: closed

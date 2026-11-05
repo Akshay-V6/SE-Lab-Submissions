@@ -1,0 +1,4 @@
+Scholarship application processor
+Marks 120 award: rejected (marks must be between 0 and 100)
+Attendance 150 eligibility: rejected (attendance must be between 0 and 100)
+Negative days-left status: rejected (days_left must be at least 0)
